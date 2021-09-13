@@ -1,15 +1,306 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Push Notification using Node</title>
-  </head>
-  <body>
-    <h1>Section.io push Notification</h1>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NN5FY2HHQ5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <button id="btn">click me</button>
+      gtag("config", "G-NN5FY2HHQ5");
+    </script>
+    <title>Time Table + Z&Gm Links</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      img {
+        height: 80px;
+        border-radius: 40%;
+        max-width: 100%;
+      }
+
+      #umar {
+        width: 80px;
+        border-radius: 40%;
+        max-width: 100%;
+      }
+
+      header {
+        color: white;
+        text-align: center;
+        padding: 3px;
+        background-color: #002147;
+      }
+
+      .QUIZ {
+        color: Red;
+      }
+
+      .Cancel {
+        color: Green;
+      }
+
+      .Naeem {
+        height: 70px;
+        border-radius: 40%;
+        max-width: 100%;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+
+      #TName {
+        color: Green;
+      }
+
+      .PRe:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .PRe:visited {
+        color: white;
+      }
+
+      .PRe:hover,
+      a:hover {
+        color: red;
+      }
+      .PRe:active {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <header>
+    <h1>
+      Time Table with Zoom & MEET Links
+      <br />
+      BSSE-V-B
+      <a href="4B/index.html" class="PRe"> BSSE-IV-B </a>
+    </h1>
+  </header>
+  <body>
+    <br />
+    <table>
+      <thead>
+        <th></th>
+        <th>8:40-9:30</th>
+        <th>9:40-10:30</th>
+        <th>10:40-11:30</th>
+        <th>11:40-12:30</th>
+        <th>12:40-1:30</th>
+        <th>1:40-2:30</th>
+        <th>2:40-3:30</th>
+        <th>3:40-4:30</th>
+        <th>4:40-5:30</th>
+      </thead>
+      <tbody>
+        <th style="background-color: #999999">MONDAY</th>
+        <td>
+          Technical & Business Writing
+          <br />
+          CT-404
+          <img src="1.png" />
+          <br />
+          <b id="TName">Miss Afroz Ilyas</b>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          Computer Networks
+          <br />
+          CT-403
+          <img src="EUH.jfif" />
+          <br />
+          <b id="TName">Dr Ehtisham</b>
+        </td>
+        <td>
+          Business Process Engineering
+          <br />
+          CT-403
+          <img src="HR.jpg" />
+          <br />
+          <b id="TName">Dr Hameedur Rahman</b>
+        </td>
+        <td>
+          Formal Methods in
+          <br />
+          Software Engineering
+          <br />
+          CT-403
+          <img
+            src="https://www.au.edu.pk/Pages/Faculties/Faculty_Images/0.jpg"
+          />
+          <br />
+          <b id="TName">Mr Adnan</b>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tbody>
+      <tbody>
+        <th>Tuesday</th>
+        <td>
+          Software Construction <br />
+          & Development
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="3.png" />
+          <br />
+          <b id="TName">Ms Arooj</b>
+        </td>
+        <td>
+          Computer Networks
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="EUH.jfif" />
+          <br />
+          <b id="TName">Dr Ehtisham</b>
+        </td>
+        <td>
+          Technical & Business Writing
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="1.png" />
+          <br />
+          <b id="TName">Miss Afroz Ilyas</b>
+        </td>
+        <td>
+          Business Process Engineering
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="HR.jpg" />
+          <br />
+          <b id="TName">Dr Hameedur Rahman</b>
+        </td>
+        <td></td>
+        <td>
+          Formal Methods in
+          <br />
+          Software Engineering
+          <br />
+          CT-402
+          <img
+            src="https://www.au.edu.pk/Pages/Faculties/Faculty_Images/0.jpg"
+          />
+          <br />
+          <b id="TName">Mr Adnan</b>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tbody>
+      <tbody>
+        <th style="background-color: #999999">Wednesday</th>
+        <td></td>
+        <td>
+          Software Construction <br />
+          & Development
+          <br />
+          CT-403
+          <img src="3.png" />
+          <br />
+          <b id="TName">Ms Arooj</b>
+        </td>
+        <td>
+          Formal Methods in
+          <br />
+          Software Engineering
+          <br />
+          CT-403
+          <img
+            src="https://www.au.edu.pk/Pages/Faculties/Faculty_Images/0.jpg"
+          />
+          <br />
+          <b id="TName">Mr Adnan </b>
+        </td>
+        <td colspan="3" style="text-align: center">
+          Software Construction <br />
+          & Development
+          <br />
+          LAB-01
+          <img src="3.png" />
+          <br />
+          <b id="TName">Ms Arooj</b>
+        </td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+      </tbody>
+      <tbody>
+        <th style="background-color: #999999">Thursday</th>
+        <td>
+          Technical & Business Writing
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="1.png" />
+          <br />
+          <b id="TName">Miss Afroz Ilyas</b>
+        </td>
+        <td>
+          Computer Networks
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="EUH.jfif" />
+          <br />
+          <b id="TName">Dr Ehtisham</b>
+        </td>
+        <td>
+          Business Process Engineering
+          <br />
+          <a href="" target="blank"> JOIN</a>
+          <img src="HR.jpg" />
+          <br />
+          <b id="TName">Dr Hameedur Rahman</b>
+        </td>
+
+        <td colspan="3" style="text-align: center">
+          Computer Networks Lab
+          <br />
+          LAB-01
+          <img
+            src="https://www.au.edu.pk/Pages/Faculties/Faculty_Images/0.jpg"
+          />
+          <br />
+          <b id="TName">Fahad</b>
+        </td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+      </tbody>
+
+      <tfoot></tfoot>
+    </table>
+    <br />
+    <br />
+    <footer>
+      <strong> Admins: </strong>
+      <br />
+      <i> Obaid Ismail </i>
+      <br />
+      <i> M.Asim Maqsood </i>
+
+      <br />
+      For Any Query: <br />
+      <a href="http://www.contactwithasim.cf" target="_blank"
+        >www.contactwithasim.cf</a
+      >
+    </footer>
 
     <script src="client.js"></script>
   </body>

@@ -18,11 +18,119 @@ function urlBase64ToUint8Array(base64String) {
 
 //check if the serveice worker can work in the current browser
 
-// setInterval(() => {
-//   if ("serviceWorker" in navigator) {
-//     send().catch((err) => console.error(err));
-//   }
-// }, 2000);
+let date;
+
+date = new Date();
+console.log(date);
+
+let day = date.getDay();
+
+console.log(day);
+
+let hrs = date.getHours();
+let min = date.getMinutes();
+
+console.log("hrs ", hrs);
+console.log("min ", min);
+if (day == 1) {
+  if (hrs == 8 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 11 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 12 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 13 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  }
+}
+if (day == 1) {
+  if (hrs == 8 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 11 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 12 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 13 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  }
+}
+if (day == 2) {
+  if (hrs == 8 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 9 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 10 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 11 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 13 && min == 40) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  }
+}
+if (day == 3) {
+  if (hrs == 9 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 10 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 11 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  }
+}
+if (day == 4) {
+  if (hrs == 8 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 9 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 10 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  } else if (hrs == 11 && min == 35) {
+    if ("serviceWorker" in navigator) {
+      send().catch((err) => console.error(err));
+    }
+  }
+}
+
+if ("serviceWorker" in navigator) {
+  send().catch((err) => console.error(err));
+}
 
 async function send() {
   //register service worker
